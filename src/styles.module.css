@@ -1,0 +1,98 @@
+.app {
+  text-align: center;
+  background-color: var(--color-dark-blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app main {
+  width: 540px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 332px;
+  border-radius: 15px;
+  background-color: var(--color-dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 48px;
+}
+
+.card h1 {
+  color: var(--color-neon-green);
+  margin-bottom: 24px;
+}
+
+.card p {
+  color: var(--color-light-cyan);
+  margin-bottom: 40px;
+}
+
+.divider {
+  width: 100%;
+  height: 16px;
+  background-image: url("./assets/pattern-divider-desktop.svg");
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.icon {
+  margin: -32px;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-neon-green);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .app {
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+  .app main {
+    width: 343px;
+    height: 347px;
+  }
+
+  .card {
+    height: 315px;
+    padding: 40px 24px;
+  }
+
+  .card h1 {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.45714px;
+  }
+
+  .card p {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.257143px;
+    margin-bottom: 24px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 16px;
+    background-image: url("./assets/pattern-divider-mobile.svg");
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+}

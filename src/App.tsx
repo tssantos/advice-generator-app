@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import styles from './styles.module.css';
+import { ReactComponent as IconDice } from './assets/icon-dice.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles['app']}>
+      <main className={styles['container']}>
+        <div className={styles['card']}>
+          <h1>ADVICE #117</h1>
+          <p>
+            “It is easy to sit up and take notice, what's difficult is getting up and taking action.”
+          </p>
+          <div className={styles['divider']}>&nbsp;</div>
+        </div>
+        <div className={styles['icon']}>
+          <IconDice />
+        </div>
+      </main>
     </div>
   );
 }
